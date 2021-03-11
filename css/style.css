@@ -302,3 +302,45 @@ template {
  */
 [hidden] {
   display: none; }
+
+.container {
+  max-width: 1256px;
+  margin: auto; }
+
+.header {
+  background-color: #131313;
+  padding: 24px 0; }
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.logo {
+  color: #E38873;
+  text-transform: uppercase; }
+
+.nav__item {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  margin-right: 40px; }
+
+.phone {
+  color: #E38873; }
+
+.contacts__phone {
+  margin-right: 45px; }
+
+.button {
+  padding: 13px 20px;
+  border: none;
+  border-radius: 2px;
+  text-transform: uppercase; }
+  .button--primary {
+    background-color: #E38873;
+    color: #fff; }
+
+body {
+  font-size: 14px;
+  font-family: sans-serif; }
