@@ -338,17 +338,20 @@ template {
   align-items: center; }
 
 .logo {
-  color: #E38873;
+  color: #E3B873;
   text-transform: uppercase; }
 
 .nav__item {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
-  margin-right: 40px; }
+  margin-right: 40px;
+  transition: color 0.2s; }
+  .nav__item:hover {
+    color: #E3B873; }
 
 .phone {
-  color: #E38873; }
+  color: #E3B873; }
 
 .contacts__phone {
   margin-right: 45px; }
@@ -363,9 +366,16 @@ template {
   height: 100vh;
   padding-top: 100px;
   color: #fff; }
+  .hero::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 19, 19, 0.7); }
   .hero__button {
     margin-right: 20px; }
   .hero__content {
+    position: relative;
     max-width: 670px; }
   .hero__text {
     font-size: 22px;
@@ -384,6 +394,14 @@ template {
     min-height: 97px;
     color: #fff;
     min-width: 247px; }
+    .hero__scroll-down::after {
+      content: '';
+      background: url("../image/arrow-down.svg") no-repeat center;
+      height: 30px;
+      width: 30px;
+      border: 2px solid #E3B873;
+      border-radius: 50%;
+      margin-left: 20px; }
   .hero__instagram {
     max-width: 82px;
     height: 100%;
@@ -397,10 +415,19 @@ template {
   justify-content: center;
   align-items: center; }
   .instagram__link {
+    display: flex;
+    align-items: center;
+    line-height: 0,8;
     text-transform: uppercase;
     text-decoration: none;
-    color: #E38873;
-    transform: rotate(-90deg); }
+    color: #E3B873;
+    transform: rotate(90deg); }
+    .instagram__link::after {
+      content: '';
+      width: 50px;
+      height: 1px;
+      background-color: #E3B873;
+      margin-left: 8px; }
 
 .title {
   margin: 0;
@@ -408,16 +435,22 @@ template {
   text-transform: uppercase;
   font-size: 40px; }
   .title--primary {
-    color: #E38873; }
+    color: #E3B873; }
 
 .button {
   padding: 13px 20px;
   border: none;
   border-radius: 2px;
   text-transform: uppercase; }
+  .button:hover {
+    cursor: pointer; }
   .button--primary {
-    background-color: #E38873;
-    color: #fff; }
+    background-color: #E3B873;
+    color: #fff;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    transition: box-shadow 0.3s; }
+    .button--primary:hover {
+      box-shadow: none; }
   .button--outline {
     border: 1px solid #fff;
     background-color: transparent;
