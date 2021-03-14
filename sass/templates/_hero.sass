@@ -18,12 +18,20 @@
     background-color: rgba( $dark , 0.7 )
   &__button
     margin-right: 20px
+    padding: 19px 21px
+    &--outline
+      padding: 19px 40px
   &__content
     position: relative
-    max-width: 670px
+    max-width: 46.27rem
+    margin-left: 4.28rem
   &__text
-    font-size: 22px
+    font-size: 1.57rem
     max-width: 500px
+    line-height: 1.4
+    margin: 0
+    margin-top: 1rem
+    margin-bottom: 3rem
   &__scroll-down
     position: absolute
     display: flex
@@ -35,9 +43,9 @@
     background-color: $dark
     text-transform: uppercase
     text-decoration: none
-    min-height: 97px
+    min-height: 6.92rem
     color: $light
-    min-width: 247px
+    min-width: 17.6rem
     &::after
       content: ''
       background: url('../image/arrow-down.svg') no-repeat center
@@ -65,16 +73,18 @@
     text-decoration: none
     color: $primary
     transform: rotate(90deg)
+    font-size: 1.1rem
     &::after
       content: ''
       width: 50px
       height: 1px
       background-color: $primary
-      margin-left: 8px
+      margin-left: 14px
 .title
   margin: 0
   font-family: 'Yeseva One', cursive
   text-transform: uppercase
-  font-size: 40px
+  font-size: 2.857rem
+  line-height: 1.4
   &--primary
     color: $primary
