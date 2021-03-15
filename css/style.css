@@ -545,6 +545,55 @@ img {
   max-width: 16.28rem;
   padding: 1.214rem; }
 
+.modal {
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .modal__button {
+    padding: 15px 20px; }
+  .modal__dialog {
+    position: relative;
+    background: #131313 url("../image/bg-lines.svg") no-repeat;
+    padding: 2.357rem 3.5rem 1.928rem;
+    color: #fff;
+    max-width: 36.36rem; }
+  .modal__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    background: transparent url("../image/close.svg") no-repeat center;
+    border: none;
+    margin: 12px;
+    cursor: pointer; }
+  .modal__title {
+    font-family: 'Yeseva one' , cursive;
+    font-size: 1.357rem;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 2.428rem; }
+  .modal__form {
+    display: flex;
+    flex-direction: column; }
+  .modal__input {
+    margin-bottom: 3.428rem; }
+    .modal__input:last-of-type {
+      margin-bottom: 1rem; }
+  .modal__policy {
+    margin-bottom: 2.7rem; }
+  .modal__button {
+    align-self: flex-end; }
+
 .button {
   border: none;
   border-radius: 2px;
@@ -563,6 +612,42 @@ img {
     border: 1px solid #fff;
     background-color: transparent;
     color: #fff; }
+
+.label--light {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.07rem; }
+
+.input {
+  background-color: transparent;
+  font-size: 1.285rem;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+  padding: 0.5rem 0; }
+  .input::-moz-placeholder {
+    color: #fff; }
+  .input:-ms-input-placeholder {
+    color: #fff; }
+  .input::placeholder {
+    color: #fff; }
+
+.policy__checkbox {
+  opacity: 0;
+  visibility: hidden; }
+  .policy__checkbox:checked + .policy__label::before {
+    background: #E3B873 url("../image/check.svg") no-repeat center/0.8rem; }
+
+.policy__label {
+  display: flex;
+  align-items: center; }
+  .policy__label::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    border: 1px solid #E3B873;
+    border-radius: 1px;
+    cursor: pointer;
+    margin-right: 0.6rem; }
 
 @media screen and (max-width: 1200px) {
   html {
