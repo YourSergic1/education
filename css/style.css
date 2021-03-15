@@ -337,9 +337,18 @@ img {
   max-width: 100%; }
 
 .section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   text-transform: uppercase;
   font-family: 'Yeseva One', cursive; }
+  .section-title__text {
+    max-width: 52.9rem;
+    font-family: 'Footora Book' , cursive;
+    font-size: 1.43rem;
+    margin: 0; }
   .section-title__image {
     display: flex;
     align-items: center;
