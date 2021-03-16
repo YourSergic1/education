@@ -546,6 +546,8 @@ img {
   padding: 1.214rem; }
 
 .modal {
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   z-index: 2;
   left: 0;
@@ -558,9 +560,13 @@ img {
   display: flex;
   align-items: center;
   justify-content: center; }
+  .modal--visible {
+    opacity: 1;
+    visibility: visible; }
   .modal__button {
     padding: 15px 20px; }
   .modal__dialog {
+    z-index: 3;
     position: relative;
     background: #131313 url("../image/bg-lines.svg") no-repeat;
     padding: 2.357rem 3.5rem 1.928rem;
