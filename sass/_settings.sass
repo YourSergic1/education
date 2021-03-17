@@ -12,6 +12,9 @@ img
   max-width: 100%
 
 .section
+  &--dark
+    background-color: $dark
+    color: $light
   &-title
     display: flex
     flex-direction: column
@@ -20,8 +23,29 @@ img
     text-align: center
     text-transform: uppercase
     font-family: 'Yeseva One', cursive
+    &--left
+      text-align: left
+      align-items: start
     &__heading
       font-size: 1.43rem
+      line-height: 138%
+      &--primary
+        color: $primary
+    &__word
+      display: flex
+      align-items: center
+      &::after
+        content: ''
+        width: 90px
+        height: 1px
+        margin-left: 2rem
+        background-color: $primary
+    &__info
+      text-transform: none
+      font-size: 1.28rem
+      font-family: 'Footora Book' , cursive
+      line-height: 2.07rem
+      max-width: 31.57em
     &__text
       text-transform: none
       max-width: 52.9rem
