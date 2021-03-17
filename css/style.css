@@ -332,7 +332,7 @@ template {
   flex-basis: 30%; }
 
 .col-50 {
-  flex-basis: 50%; }
+  width: 50%; }
 
 *, *:after, *:before {
   box-sizing: border-box; }
@@ -363,8 +363,9 @@ img {
     text-align: left;
     align-items: start; }
   .section-title__heading {
-    font-size: 1.43rem;
-    line-height: 138%; }
+    font-size: 1.43rem; }
+    .section-title__heading--big {
+      font-size: 1.77rem; }
     .section-title__heading--primary {
       color: #E3B873; }
   .section-title__word {
@@ -378,7 +379,7 @@ img {
       background-color: #E3B873; }
   .section-title__info {
     text-transform: none;
-    font-size: 1.28rem;
+    font-size: 1.08rem;
     font-family: 'Footora Book' , cursive;
     line-height: 2.07rem;
     max-width: 31.57em; }
@@ -406,7 +407,7 @@ img {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   background-color: #131313;
   padding: 24px 0; }
@@ -580,6 +581,52 @@ img {
   width: 100%;
   max-width: 16.28rem;
   padding: 1.214rem; }
+
+.projects {
+  padding-bottom: 30rem; }
+
+.swiper-slide {
+  display: flex;
+  flex-wrap: wrap; }
+  .swiper-slide__text {
+    flex-basis: 50%;
+    margin-bottom: 2.42rem;
+    padding-bottom: 2rem; }
+  .swiper-slide__heading {
+    font-size: 1.285rem;
+    line-height: 1.78rem;
+    color: #E3B873;
+    font-family: 'Yeseva one' , cursive;
+    text-transform: uppercase;
+    margin-bottom: 0.64rem; }
+
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.3); }
+  .swiper-pagination-bullet-active {
+    background-color: #fff; }
+
+.swiper-button-prev {
+  background: url("../image/arrow-pref.svg") no-repeat center;
+  width: 42px;
+  height: 14px;
+  bottom: 0;
+  top: auto;
+  left: 0; }
+  .swiper-button-prev::after {
+    display: none; }
+
+.swiper-button-next {
+  background: url("../image/arrow-next.svg") no-repeat center;
+  width: 42px;
+  height: 14px;
+  bottom: 0;
+  top: auto; }
+  .swiper-button-next::after {
+    display: none; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  width: auto;
+  bottom: -2px; }
 
 .modal {
   opacity: 0;
