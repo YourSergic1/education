@@ -393,10 +393,13 @@ img {
       background-color: #E3B873; }
   .section-title__info {
     text-transform: none;
+    margin: 0;
     font-size: 1.08rem;
     font-family: 'Footora Book' , cursive;
     line-height: 2.07rem;
     max-width: 31.57em; }
+    .section-title__info--big {
+      text-transform: uppercase; }
   .section-title__text {
     text-transform: none;
     max-width: 52.9rem;
@@ -658,16 +661,8 @@ img {
   bottom: -2px; }
 
 .target {
-  padding-bottom: 4rem; }
-  .target__row {
-    padding-top: 29rem; }
-
-.swiper-slide {
-  margin-right: 3px; }
-  .swiper-slide__value {
-    width: 70%; }
-  .swiper-slide__info {
-    margin-bottom: 5rem; }
+  padding-top: 40rem;
+  padding-bottom: 40rem; }
 
 .modal {
   opacity: 0;
