@@ -460,15 +460,6 @@ img {
   height: 100vh;
   padding-top: 100px;
   color: #fff; }
-  .hero::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 3.46rem;
-    background-color: #131313; }
   .hero::before {
     content: '';
     top: 0;
@@ -554,6 +545,60 @@ img {
 
 .control {
   margin-top: -24rem; }
+  .control__section-title {
+    margin-bottom: 2.214rem; }
+  .control__video {
+    position: relative;
+    display: flex;
+    margin: auto;
+    margin-bottom: 4.428rem;
+    max-width: 58.357rem;
+    min-height: 31rem;
+    background: url("../image/video-mask.jpg") center no-repeat; }
+    .control__video::before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-color: rgba(19, 19, 19, 0.8); }
+  .control__text {
+    max-width: 40.785rem;
+    margin: auto;
+    text-align: center;
+    font-size: 1.428rem;
+    line-height: 2.4rem;
+    margin-bottom: 4.285rem; }
+    .control__text::before {
+      content: '';
+      display: block;
+      margin: auto;
+      margin-bottom: 2.5rem;
+      width: 55px;
+      height: 2px;
+      background-color: #E3B873;
+      border-radius: 30px; }
+  .control__form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 55rem;
+    margin: auto; }
+  .control__button {
+    padding: 0 4.285rem; }
+  .control__input-group {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%; }
+  .control__policy {
+    flex-basis: 100%;
+    margin-top: 1.2rem; }
+    .control__policy__label {
+      justify-content: center;
+      margin-bottom: 9.5rem; }
+
+.video__play {
+  position: relative;
+  margin: auto; }
 
 .types__section-title {
   margin-bottom: 2rem; }
@@ -600,8 +645,11 @@ img {
   margin-bottom: -29.7rem; }
 
 .project {
-  padding-top: 8rem;
-  padding-bottom: 29.5rem; }
+  padding-top: 11.46rem;
+  margin-top: -3.46rem;
+  padding-bottom: 29.5rem;
+  background: #131313 url("../image/project_bgc.svg");
+  background-position: 0 75%; }
 
 .swiper-slide {
   display: flex;
@@ -733,11 +781,11 @@ img {
   border: none;
   border-bottom: 1px solid rgba(54, 54, 54, 0.3);
   padding: 0.5rem 0; }
-  .input::-moz-placeholder {
+  .input--light::-moz-placeholder {
     color: #fff; }
-  .input:-ms-input-placeholder {
+  .input--light:-ms-input-placeholder {
     color: #fff; }
-  .input::placeholder {
+  .input--light::placeholder {
     color: #fff; }
 
 .policy__checkbox {
