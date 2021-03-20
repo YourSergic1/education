@@ -334,6 +334,9 @@ template {
 .col-50 {
   width: 50%; }
 
+.col-25 {
+  flex-basis: 25%; }
+
 *, *:after, *:before {
   box-sizing: border-box; }
 
@@ -641,7 +644,7 @@ img {
   padding: 1.214rem; }
 
 .design {
-  margin-bottom: -29.7rem; }
+  margin-top: 10rem; }
 
 .project {
   padding-top: 11.46rem;
@@ -696,7 +699,8 @@ img {
   bottom: -2px; }
 
 .footer {
-  margin-top: 100rem;
+  margin-top: 7rem;
+  padding-top: 5rem;
   background: #131313 url("../image/footer-bg.jpg") no-repeat center/cover; }
   .footer__menu {
     background-color: #131313;
@@ -820,18 +824,19 @@ img {
 .input {
   background-color: transparent;
   font-size: 1.285rem;
-  color: #fff;
   border: none;
   border-bottom: 1px solid rgba(54, 54, 54, 0.3);
   padding: 0.5rem 0; }
   .input--dark {
     color: #131313; }
-  .input--light::-moz-placeholder {
+  .input--light {
     color: #fff; }
-  .input--light:-ms-input-placeholder {
-    color: #fff; }
-  .input--light::placeholder {
-    color: #fff; }
+    .input--light::-moz-placeholder {
+      color: #fff; }
+    .input--light:-ms-input-placeholder {
+      color: #fff; }
+    .input--light::placeholder {
+      color: #fff; }
 
 .policy__checkbox {
   opacity: 0;
