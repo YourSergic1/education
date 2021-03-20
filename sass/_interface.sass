@@ -23,11 +23,13 @@
 .input
   background-color: transparent
   font-size: 1.285rem
-  color: $light
   border: none
   border-bottom: 1px solid rgba(54, 54, 54, 0.3)
   padding: 0.5rem 0
+  &--dark
+    color: $dark
   &--light
+    color: $light
       &::placeholder
         color: $light
 .policy
@@ -52,5 +54,11 @@
       margin-right: 0.6rem
     &--center
       justify-content: center
+label
+  &.invalid
+    color: tomato
+input
+  &.invalid
+    border-bottom: 1px solid tomato
 
 

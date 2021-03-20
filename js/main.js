@@ -45,4 +45,59 @@ $(document).ready(function () {
 
     new WOW().init();
 
+
+    $('.modal__form').validate({
+      errorClass: "invalid",
+      rules:{
+        userName: "required",
+        userPhone: "required",
+        userEmail: {
+          required: true,
+          email: true
+        }
+      },
+
+      messages:{
+        userName: "Имя обязатеьно!",
+        userPhone: "Телефон обязателен!",
+        userEmail: {
+          required: "Обязательно укажите Email",
+          email: "Введите в формате: sobaka@gmail.com"
+        }
+      }
+    });
+
+    $('.footer__form').validate({
+      errorClass: "invalid",
+      rules:{
+        userName: "required",
+        userPhone: "required",
+        userQuestion: "required"
+        
+        
+      },
+
+      messages:{
+        userName: "Имя обязатеьно!",
+        userPhone: "Телефон обязателен!",
+        userQuestion: "Вопрос обязателен",
+      }
+    });
+
+    $('.control__form').validate({
+      errorClass: "invalid",
+      rules:{
+        userName: "required",
+        userPhone: "required",
+      },
+
+      messages:{
+        userName: "Имя обязатеьно!",
+        userPhone: "Телефон обязателен!",
+      }
+    });
+
+
+    $('[type=tel]').mask('+7(000) 000-00-00' , {placeholder: "+7 (___) ___-__-__"});
+
 });
