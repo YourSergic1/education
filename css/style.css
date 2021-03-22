@@ -740,6 +740,33 @@ img {
   .footer__button {
     padding: 20px 65px;
     margin: auto; }
+  .footer__map {
+    margin-bottom: 4.4rem; }
+  .footer__info {
+    text-transform: uppercase;
+    line-height: 0.6;
+    text-align: center;
+    color: #E3B873;
+    font-size: 1.22rem;
+    font-family: 'Yeseva One', cursive; }
+
+.info__phone {
+  margin-bottom: 2.4rem; }
+
+.info__email {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background: url("../image/footer-email.png");
+  margin-bottom: 3rem;
+  margin-right: 1rem; }
+
+.info__inst {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background: url("../image/footer-inst.png");
+  margin-bottom: 3rem; }
 
 .modal {
   opacity: 0;
